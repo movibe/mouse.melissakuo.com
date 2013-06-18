@@ -1,20 +1,58 @@
 html, body {
+    height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    font-family: Abel, League-Gothic, sans-serif
 }
 
 body {
-    overflow: auto;
-    height:7600px;
+    height: 20000px;
+    overflow-y: auto;
 }
 
-.skrollr-body {
-    width: 100%;
-    height:100%;
-    position:fixed;
-}
-
-.skrollr-body div {
+div img p {
     overflow: hidden;
     position: absolute;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    background: url('../img/test-mouse.png') repeat;
+}
+
+#scene-1 {
+    background: #FF0000;
+}
+
+#scene-2 {
+    background: #00FF00;
+}
+
+#scene-3 {
+    background: #FFFF00;
+}
+
+#scene-4 {
+    background: #FF00FF;
+}
+
+#intro-bg {
+    height: 100%;
+    width: 100%;
+    background: url('../img/001_oh-hi-there.png') center center no-repeat;
+}
+
+#desk-bg {
+    height: 100%;
+    width: 100%;
+    background: url('../img/test-mouse.png') center center no-repeat;
 }
