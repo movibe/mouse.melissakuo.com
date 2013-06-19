@@ -1,10 +1,19 @@
 html, body {
+    width:100%;
     height: 100%;
-    width: 100%;
-    margin: 0;
     padding: 0;
+    margin: 0;
     overflow-x: hidden;
-    font-family: Abel, League-Gothic, sans-serif
+    font-family: Abel, sans-serif
+}
+
+.skrollable {
+    position: fixed;
+    z-index: 100;
+}
+
+.skrollable .skrollable {
+    position: absolute;
 }
 
 body {
@@ -12,9 +21,13 @@ body {
     overflow-y: auto;
 }
 
-div img p {
+div, h1, h2 {
     overflow: hidden;
-    position: absolute;
+}
+
+h1, h2 {
+    display: inline;
+    font-family: League-Gothic, sans-serif
 }
 
 .background {
@@ -25,16 +38,55 @@ div img p {
     right: 0;
     bottom: 0;
     position: fixed;
-    text-align: center;
-    background: url('../img/test-mouse.png') repeat;
+    display: block;
+    background: url('../img/lightpaperfibers.png') repeat;
+}
+
+.track1 {
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
 }
 
 #scene-1 {
     background: #FF0000;
 }
 
+#intro-bg {
+    height: 100%;
+    width: 100%;
+    background: url('../img/001_oh-hi-there.png') center center no-repeat;
+}
+
 #scene-2 {
     background: #00FF00;
+}
+
+#desk-bg {
+    height: 100%;
+    width: 100%;
+    background: url('../img/test-mouse.png') center center no-repeat;
+}
+
+#desk-container {
+    height: 350px;
+    width: 100%;
+    bottom: 0%;
+}
+
+#desk-tools {
+    height: 200px;
+    width: 100%;
+    top: 0%;
+    background: #0000AA;
+}
+
+#desk-eraser {
+    height: 50px;
+    width: 100%;
+    bottom: 0%;
+    background: #00CCFF;
 }
 
 #scene-3 {
@@ -45,14 +97,15 @@ div img p {
     background: #FF00FF;
 }
 
-#intro-bg {
-    height: 100%;
+#convo-container {
+    height: 2000px;
     width: 100%;
-    background: url('../img/001_oh-hi-there.png') center center no-repeat;
+    bottom: 0%;
 }
 
-#desk-bg {
-    height: 100%;
+#convo-shriek {
+    height: 400px;
     width: 100%;
-    background: url('../img/test-mouse.png') center center no-repeat;
+    top: 0%;
+    background: #999999;
 }
