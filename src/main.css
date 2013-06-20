@@ -16,16 +16,12 @@ html, body {
 }
 
 body {
-    height: 40000px;
+    height: 60000px;
     overflow-y: auto;
 }
 
-div, h1, h2 {
+div {
     overflow: hidden;
-}
-
-h1, h2 {
-    display: inline;
 }
 
 .background {
@@ -129,6 +125,14 @@ h1, h2 {
 }
 
 #scene-6 {
+    background: url('../img/fuzzball.png') center center no-repeat;
+}
+
+#fuzz-text {
+    height: 1000px;
+    width: 100%;
+    top: 0%;
+    background: url('../img/in-the-corner.png') center center no-repeat;
 }
 
 #scene-7 {
@@ -136,11 +140,126 @@ h1, h2 {
 }
 
 #scene-8 {
-    background: #3333AA;
+    background: url('../img/mousey.png') center center no-repeat;
 }
 
-#alas-container {
-    height: 200%;
+#alas-text-1 {
+    height: 100%;
     width: 100%;
-    background: url('../img/test-mouse.png') repeat;
+    background: url('../img/alas.png') center center no-repeat;
+}
+
+#alas-text-2 {
+    height: 100%;
+    width: 100%;
+    background: url('../img/twas-a-mouse.png') center center no-repeat;
+}
+
+#alas-text-3 {
+    height: 100%;
+    width: 100%;
+    background: url('../img/and-it-was-eating.png') center center no-repeat;
+}
+
+#alas-kitkat-full {
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    background: url('../img/kitkat.png') center center no-repeat;
+}
+
+#alas-kitkat-empty {
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    background: url('../img/kitkat2.png') center center no-repeat;
+}
+
+#scene-9 {
+    background: url('../img/so-under.png') center center no-repeat;
+}
+
+#flail {
+    height: 100%;
+    width: 100%;
+    background: url('../img/flail.png') center center no-repeat;
+}
+
+#scene-10 {
+    background: url('../img/but-to-tell.png') center center no-repeat;
+}
+
+#truth-measure {
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    background: url('../img/kitkat-wrapper-size.png') center center no-repeat;
+}
+
+#scene-11 {
+    background: url('../img/so-naturally.png') center center no-repeat;
+}
+
+#photo-model {
+    height: 100%;
+    width: 100%;
+    background: url('../img/photo-modelpose.png') center center no-repeat;
+}
+
+#photo-eating {
+    height: 1000px;
+    width: 100%;
+    background: url('../img/photo-eatingkitkat.png') center center no-repeat;
+}
+
+#photo-lying {
+    height: 100%;
+    width: 100%;
+    background: url('../img/photo-lyingdown.png') center center no-repeat;
+}
+
+#scene-12 {
+    background: url('../img/my-fb-status.png') center center no-repeat;
+}
+
+#fb-comment-1 {
+    height: 100%;
+    width: 100%;
+    background: url('../img/fb-comments-1.png') center center no-repeat;
+}
+
+#fb-comment-2 {
+    height: 100%;
+    width: 100%;
+    background: url('../img/fb-comments-2.png') center center no-repeat;
+}
+
+#fb-comment-3 {
+    height: 100%;
+    width: 100%;
+    background: url('../img/fb-comments-3.png') center center no-repeat;
+}
+
+#scene-13 {
+    background: url('../img/that-night.png') center center no-repeat;
+}
+
+#night-mouse {
+    height: 100%;
+    width: 100%;
+    background: url('../img/scurrying-mouse.png') center center no-repeat;
+}
+
+#scene-14 {
+    background: url('../img/leaving-behind.png') center center no-repeat;
+}
+
+#scene-15 {
+    background: url('../img/that-night-i-removed.png') center center no-repeat;
+}
+
+#snacks {
+    height: 1000px;
+    width: 100%;
+    background: url('../img/allnighter-snacks.png') center center no-repeat;
 }

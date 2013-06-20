@@ -4,7 +4,274 @@
         <meta charset="utf-8">
         <title>Home</title>
 
-        <link rel="stylesheet" href="main.css" type="text/css">
+        <!-- <link rel="stylesheet" href="main.css" type="text/css"> -->
+        <style>
+        html, body {
+    width:100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.skrollable {
+    position: fixed;
+    z-index: 100;
+}
+
+.skrollable .skrollable {
+    position: absolute;
+}
+
+body {
+    height: 60000px;
+    overflow-y: auto;
+}
+
+div {
+    overflow: hidden;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    display: block;
+    background: url('../img/lightpaperfibers.png') repeat;
+}
+
+#scene-1 {
+    background: url('../img/hi-im-melissa-text.png') center center no-repeat;
+}
+
+#scene-2 {
+    background: url('../img/my-desk-laptop-mousepad.png') center center no-repeat;
+}
+
+#desk-tools {
+    height: 100%;
+    width: 100%;
+    background: url('../img/my-desk-stuff.png') center center no-repeat;
+}
+
+#desk-text-1 {
+    height: 100%;
+    width: 100%;
+    background: url('../img/and-well-theres-a-mouse.png') center center no-repeat;
+}
+
+#desk-text-2 {
+    height: 100%;
+    width: 100%;
+    background: url('../img/er-i-mean.png') center center no-repeat;
+}
+
+#desk-mouse {
+    height: 100%;
+    width: 100%;
+    background: url('../img/my-desk-mouse.png') center center no-repeat;
+}
+
+#desk-mouse-real {
+    height: 100%;
+    width: 100%;
+    background: url('../img/my-desk-mouse-real.png') center center no-repeat;
+}
+
+#jerry-text {
+    height: 100%;
+    width: 100%;
+    background: url('../img/this-is-the-story.png') center center no-repeat;
+}
+
+#scene-4 {
+}
+
+#convo-shriek {
+    height: 1019px;
+    width: 100%;
+    background: url('../img/shriek.png') center center no-repeat;
+}
+
+#convo-ahh {
+    height: 1017px;
+    width: 100%;
+    right: 0px;
+    background: url('../img/ahh.png') center center no-repeat;
+}
+
+#convo-omg {
+    height: 1019px;
+    width: 100%;
+    background: url('../img/omg.png') center center no-repeat;
+}
+
+#convo-text-1 {
+    height: 1019px;
+    width: 100%;
+    background: url('../img/it-was-around-nov.png') center center no-repeat;
+}
+
+#scene-5 {
+    background: url('../img/something-cool.png') center center no-repeat;
+}
+
+#cool-text-1 {
+    height: 750px;
+    width: 100%;
+    background: url('../img/and-one-fateful-day.png') center center no-repeat;
+}
+
+#cool-text-2 {
+    height: 750px;
+    width: 100%;
+    background: url('../img/i-froze.png') center center no-repeat;
+}
+
+#scene-6 {
+    background: url('../img/fuzzball.png') center center no-repeat;
+}
+
+#fuzz-text {
+    height: 1000px;
+    width: 100%;
+    top: 0%;
+    background: url('../img/in-the-corner.png') center center no-repeat;
+}
+
+#scene-7 {
+    background: url('../img/thinkingmelissa.png') center center no-repeat;
+}
+
+#scene-8 {
+    background: url('../img/mousey.png') center center no-repeat;
+}
+
+#alas-text-1 {
+    height: 100%;
+    width: 100%;
+    background: url('../img/alas.png') center center no-repeat;
+}
+
+#alas-text-2 {
+    height: 100%;
+    width: 100%;
+    background: url('../img/twas-a-mouse.png') center center no-repeat;
+}
+
+#alas-text-3 {
+    height: 100%;
+    width: 100%;
+    background: url('../img/and-it-was-eating.png') center center no-repeat;
+}
+
+#alas-kitkat-full {
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    background: url('../img/kitkat.png') center center no-repeat;
+}
+
+#alas-kitkat-empty {
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    background: url('../img/kitkat2.png') center center no-repeat;
+}
+
+#scene-9 {
+    background: url('../img/so-under.png') center center no-repeat;
+}
+
+#flail {
+    height: 100%;
+    width: 100%;
+    background: url('../img/flail.png') center center no-repeat;
+}
+
+#scene-10 {
+    background: url('../img/but-to-tell.png') center center no-repeat;
+}
+
+#truth-measure {
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    background: url('../img/kitkat-wrapper-size.png') center center no-repeat;
+}
+
+#scene-11 {
+    background: url('../img/so-naturally.png') center center no-repeat;
+}
+
+#photo-model {
+    height: 100%;
+    width: 100%;
+    background: url('../img/photo-modelpose.png') center center no-repeat;
+}
+
+#photo-eating {
+    height: 1000px;
+    width: 100%;
+    background: url('../img/photo-eatingkitkat.png') center center no-repeat;
+}
+
+#photo-lying {
+    height: 100%;
+    width: 100%;
+    background: url('../img/photo-lyingdown.png') center center no-repeat;
+}
+
+#scene-12 {
+    background: url('../img/my-fb-status.png') center center no-repeat;
+}
+
+#fb-comment-1 {
+    height: 100%;
+    width: 100%;
+    background: url('../img/fb-comments-1.png') center center no-repeat;
+}
+
+#fb-comment-2 {
+    height: 100%;
+    width: 100%;
+    background: url('../img/fb-comments-2.png') center center no-repeat;
+}
+
+#fb-comment-3 {
+    height: 100%;
+    width: 100%;
+    background: url('../img/fb-comments-3.png') center center no-repeat;
+}
+
+#scene-13 {
+    background: url('../img/that-night.png') center center no-repeat;
+}
+
+#night-mouse {
+    height: 100%;
+    width: 100%;
+    background: url('../img/scurrying-mouse.png') center center no-repeat;
+}
+
+#scene-14 {
+    background: url('../img/leaving-behind.png') center center no-repeat;
+}
+
+#scene-15 {
+    background: url('../img/that-night-i-removed.png') center center no-repeat;
+}
+
+#snacks {
+    height: 1000px;
+    width: 100%;
+    background: url('../img/allnighter-snacks.png') center center no-repeat;
+}
+        </style>
     </head>
     <body>
         <div class="background"></div>
@@ -25,34 +292,67 @@
         </div>
 
         <div id="scene-4" class="background" data-12000="top: 100%" data-13000="top: 0%" data-15000="top: 0%" data-16000="top: -100%">
-            <div id="convo-shriek" data-13000="top: 0%" data-14000="top: -100%"></div>
+            <div id="convo-shriek" data-13000="top: 150%" data-15000="top: -100%"></div>
             <div id="convo-omg" data-13000="top: 0%" data-14000="top: -100%"></div>
-            <div id="convo-ahh" data-13000="top: 0%" data-14000="top: -100%"></div>
+            <div id="convo-ahh" data-13000="top: 100%" data-14000="top: -150%"></div>
             <div id="convo-text-1" data-13000="top: 0%" data-14000="top: -100%"></div>
         </div>
 
-        <div id="scene-5" class="background" data-15000="top: 100%" data-16000="top: 0%" data-20000="top: 0%" data-21000="top: -100%">
-            <div id="cool-text-1" data-17000="top: 0%" data-18000="top: -100%"></div>
-            <div id="cool-text-2" data-17000="top: 100%" data-18000="top: 0%" data-19000="top: 0%" data-20000="top: -100%"></div>
+        <div id="scene-5" class="background" data-15000="top: 100%" data-16000="top: 0%" data-21000="top: 0%" data-22000="top: -100%">
+            <div id="cool-text-1" data-16000="left: 100%" data-17000="left: 0%" data-18000="left: 0%" data-19000="left: -100%"></div>
+            <div id="cool-text-2" data-18000="left: 100%" data-19000="left: 0%" data-20000="left: 0%" data-21000="left: -100%"></div>
         </div>
 
-        <div id="scene-6" class="background" data-20000="top: 100%" data-21000="top: 0%" data-23000="top: 0%" data-24000="top: -100%">
+        <div id="scene-6" class="background" data-21000="top: 100%" data-22000="top: 0%" data-23000="top: 0%" data-24000="top: -100%">
+            <div id="fuzz-text"></div>
         </div>
 
-        <div id="scene-7" class="background" data-24000="top: 100%" data-25000="top: 0%" data-26000="top: 0%" data-27000="top: -100%">
+        <div id="scene-7" class="background" data-23000="top: 100%" data-24000="top: 0%" data-25000="top: 0%" data-26000="top: -100%">
             <div id="think-text"></div>
         </div>
 
-        <div id="scene-8" class="background" data-26000="top: 100%" data-27000="top: 0%" data-32000="top: 0%" data-33000="top: -100%">
-            <div id="alas-container" data-30000="top: 0%" data-31000="top: -100%">
-                <h1>
-                    ALAS!
-                </h1>
-                <h1 data-28000="bottom: 0%" data-29000="bottom: 50%" data-30000="bottom: 50%">
-                    T'WAS A MOUSE!
-                    (You saw that coming, huh...?)
-                </h1>
-            </div>
+        <div id="scene-8" class="background" data-25000="top: 100%" data-26000="top: 0%" data-31000="top: 0%" data-32000="top: -100%">
+            <div id="alas-text-1" data-27000="top: 0%" data-28000="top: -100%"></div>
+            <div id="alas-text-2" data-26000="top: 100%" data-27000="top: 0%" data-28000="top: 0%" data-29000="top: -100%"></div>
+            <div id="alas-text-3" data-28000="top: 100%" data-29000="top: 0%"></div>
+            <div id="alas-kitkat-full" data-28000="opacity: 0" data-29000="opacity: 1" data-30000="opacity: 1" data-31000="opacity: 0"></div>
+            <div id="alas-kitkat-empty" data-30000="opacity: 0" data-31000="opacity: 1"></div>
+        </div>
+
+        <div id="scene-9" class="background" data-31000="top: 100%" data-32000="top: 0%" data-34000="top: 0%" data-35000="top: -100%">
+            <div id="flail" data-32000="left: -100%" data-34000="left: 100%"></div>
+        </div>
+
+        <div id="scene-10" class="background" data-34000="top: 100%" data-35000="top: 0%" data-36000="top: 0%" data-37000="top: -100%">
+            <div id="truth-measure"></div>
+        </div>
+
+        <div id="scene-11" class="background" data-36000="top: 100%" data-37000="top: 0%" data-40000="top: 0%" data-41000="top: -100%">
+            <div id="photo-model" data-37000="top: 100%" data-40000="top: 0%" data-41000="top: -100%"></div>
+            <div id="photo-eating" data-37000="left: -100%" data-40000="left: 0%" data-41000="left: 100%"></div>
+            <div id="photo-lying" data-37000="left: 100%" data-40000="left: 0%" data-41000="left: -100%"></div>
+        </div>
+
+        <div id="scene-12" class="background" data-40000="top: 100%" data-41000="top: 0%" data-45000="top: 0%" data-46000="top: -100%">
+            <div id="fb-comment-1" data-42000="top: 100%" data-44000="top: -100%"></div>
+            <div id="fb-comment-2" data-42000="top: 100%" data-45000="top: -100%"></div>
+            <div id="fb-comment-3" data-42000="top: 100%" data-43000="top: -100%"></div>
+        </div>
+
+        <div id="scene-13" class="background" data-45000="top: 100%" data-46000="top: 0%" data-48000="top: 0%" data-49000="top: -100%">
+            <div id="night-mouse" data-46000="left: -100%" data-48000="left: 100%"></div>
+        </div>
+
+        <div id="scene-14" class="background" data-48000="top: 100%" data-49000="top: 0%" data-50000="top: 0%" data-51000="top: -100%"></div>
+
+        <div id="scene-15" class="background" data-50000="top: 100%" data-51000="top: 0%" data-53000="top: 0%" data-54000="top: -100%">
+            <div id="snacks" data-51000="top: 100%" data-53000="top: -100%"></div>
+        </div>
+
+        <div id="scene-16" class="background" data-53000="top: 100%" data-54000="top: 0%" data-57000="top: 0%" data-58000="top: -100%">
+            <div id="ninja-1"></div>
+            <div id="ninja-2"></div>
+            <div id="ninja-3"></div>
         </div>
 
         <script src="../lib/skrollr.js"></script>
