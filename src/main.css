@@ -16,7 +16,7 @@ html, body {
 }
 
 body {
-    height: 60000px;
+    height: 70000px;
     overflow-y: auto;
 }
 
@@ -262,4 +262,34 @@ div {
     height: 1000px;
     width: 100%;
     background: url('../img/allnighter-snacks.png') center center no-repeat;
+}
+
+#scene-16 {
+    background: url('../img/i-dont-even-know.png') center center no-repeat;
+}
+
+#ninja-1 {
+    height: 1000px;
+    width: 100%;
+    background: url('../img/ninja-mouse-1.png') center center no-repeat;
+}
+
+#ninja-2 {
+    height: 1000px;
+    width: 100%;
+    background: url('../img/ninja-mouse-2.png') center center no-repeat;
+}
+
+#ninja-3 {
+    height: 1000px;
+    width: 100%;
+    background: url('../img/ninja-mouse-3.png') center center no-repeat;
+}
+
+#scene-17 {
+    background: url('../img/anyways-guest-appear.png') center center no-repeat;
+}
+
+#scene-18 {
+    background: url('../img/by-this-point.png') center center no-repeat;
 }
