@@ -4,7 +4,6 @@ html, body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    font-family: Abel, sans-serif
 }
 
 .skrollable {
@@ -17,7 +16,7 @@ html, body {
 }
 
 body {
-    height: 20000px;
+    height: 40000px;
     overflow-y: auto;
 }
 
@@ -27,7 +26,6 @@ div, h1, h2 {
 
 h1, h2 {
     display: inline;
-    font-family: League-Gothic, sans-serif
 }
 
 .background {
@@ -42,70 +40,107 @@ h1, h2 {
     background: url('../img/lightpaperfibers.png') repeat;
 }
 
-.track1 {
-    height: 150px;
-    width: 100%;
-    position: absolute;
-    bottom: 0%;
-}
-
 #scene-1 {
-    background: #FF0000;
-}
-
-#intro-bg {
-    height: 100%;
-    width: 100%;
-    background: url('../img/001_oh-hi-there.png') center center no-repeat;
+    background: url('../img/hi-im-melissa-text.png') center center no-repeat;
 }
 
 #scene-2 {
-    background: #00FF00;
-}
-
-#desk-bg {
-    height: 100%;
-    width: 100%;
-    background: url('../img/test-mouse.png') center center no-repeat;
-}
-
-#desk-container {
-    height: 350px;
-    width: 100%;
-    bottom: 0%;
+    background: url('../img/my-desk-laptop-mousepad.png') center center no-repeat;
 }
 
 #desk-tools {
-    height: 200px;
+    height: 100%;
     width: 100%;
-    top: 0%;
-    background: #0000AA;
+    background: url('../img/my-desk-stuff.png') center center no-repeat;
 }
 
-#desk-eraser {
-    height: 50px;
+#desk-text-1 {
+    height: 100%;
     width: 100%;
-    bottom: 0%;
-    background: #00CCFF;
+    background: url('../img/and-well-theres-a-mouse.png') center center no-repeat;
 }
 
-#scene-3 {
-    background: #FFFF00;
+#desk-text-2 {
+    height: 100%;
+    width: 100%;
+    background: url('../img/er-i-mean.png') center center no-repeat;
+}
+
+#desk-mouse {
+    height: 100%;
+    width: 100%;
+    background: url('../img/my-desk-mouse.png') center center no-repeat;
+}
+
+#desk-mouse-real {
+    height: 100%;
+    width: 100%;
+    background: url('../img/my-desk-mouse-real.png') center center no-repeat;
+}
+
+#jerry-text {
+    height: 100%;
+    width: 100%;
+    background: url('../img/this-is-the-story.png') center center no-repeat;
 }
 
 #scene-4 {
-    background: #FF00FF;
-}
-
-#convo-container {
-    height: 2000px;
-    width: 100%;
-    bottom: 0%;
 }
 
 #convo-shriek {
-    height: 400px;
+    height: 1019px;
     width: 100%;
-    top: 0%;
-    background: #999999;
+    background: url('../img/shriek.png') center center no-repeat;
+}
+
+#convo-ahh {
+    height: 1017px;
+    width: 100%;
+    right: 0px;
+    background: url('../img/ahh.png') center center no-repeat;
+}
+
+#convo-omg {
+    height: 1019px;
+    width: 100%;
+    background: url('../img/omg.png') center center no-repeat;
+}
+
+#convo-text-1 {
+    height: 1019px;
+    width: 100%;
+    background: url('../img/it-was-around-nov.png') center center no-repeat;
+}
+
+#scene-5 {
+    background: url('../img/something-cool.png') center center no-repeat;
+}
+
+#cool-text-1 {
+    height: 750px;
+    width: 100%;
+    background: url('../img/and-one-fateful-day.png') center center no-repeat;
+}
+
+#cool-text-2 {
+    height: 750px;
+    width: 100%;
+    background: url('../img/i-froze.png') center center no-repeat;
+}
+
+#scene-6 {
+}
+
+#scene-7 {
+    background: url('../img/thinkingmelissa.png') center center no-repeat;
+}
+
+#scene-8 {
+    background: #3333AA;
+}
+
+#alas-container {
+    height: 200%;
+    width: 100%;
+    background: url('../img/test-mouse.png') repeat;
 }
