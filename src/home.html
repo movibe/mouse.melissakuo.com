@@ -4,7 +4,367 @@
         <meta charset="utf-8">
         <title>Home</title>
 
-        <link rel="stylesheet" href="main.css" type="text/css">
+        <style>
+            html, body {
+                width:100%;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+                overflow-x: hidden;
+            }
+
+            .skrollable {
+                position: fixed;
+                z-index: 100;
+            }
+
+            .skrollable .skrollable {
+                position: absolute;
+            }
+
+            body {
+                height: 77000px;
+                overflow-y: auto;
+            }
+
+            div {
+                overflow: hidden;
+            }
+
+            .background {
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                position: fixed;
+                display: block;
+                background: url('../img/lightpaperfibers.png') repeat;
+            }
+
+            #scene-1 {
+                background: url('../img/hi-im-melissa-text.png') center center no-repeat;
+            }
+
+            #scene-2 {
+                background: url('../img/my-desk-laptop-mousepad.png') center center no-repeat;
+            }
+
+            #desk-tools {
+                height: 100%;
+                width: 100%;
+                background: url('../img/my-desk-stuff.png') center center no-repeat;
+            }
+
+            #desk-text-1 {
+                height: 100%;
+                width: 100%;
+                background: url('../img/and-well-theres-a-mouse.png') center center no-repeat;
+            }
+
+            #desk-text-2 {
+                height: 100%;
+                width: 100%;
+                background: url('../img/er-i-mean.png') center center no-repeat;
+            }
+
+            #desk-mouse {
+                height: 100%;
+                width: 100%;
+                background: url('../img/my-desk-mouse.png') center center no-repeat;
+            }
+
+            #desk-mouse-real {
+                height: 100%;
+                width: 100%;
+                background: url('../img/my-desk-mouse-real.png') center center no-repeat;
+            }
+
+            #jerry-text {
+                height: 100%;
+                width: 100%;
+                background: url('../img/this-is-the-story.png') center center no-repeat;
+            }
+
+            #convo-shriek {
+                height: 1019px;
+                width: 100%;
+                background: url('../img/shriek.png') center center no-repeat;
+            }
+
+            #convo-ahh {
+                height: 1017px;
+                width: 100%;
+                right: 0px;
+                background: url('../img/ahh.png') center center no-repeat;
+            }
+
+            #convo-omg {
+                height: 1019px;
+                width: 100%;
+                background: url('../img/omg.png') center center no-repeat;
+            }
+
+            #convo-text-1 {
+                height: 1019px;
+                width: 100%;
+                background: url('../img/it-was-around-nov.png') center center no-repeat;
+            }
+
+            #scene-5 {
+                background: url('../img/something-cool.png') center center no-repeat;
+            }
+
+            #cool-text-1 {
+                height: 750px;
+                width: 100%;
+                background: url('../img/and-one-fateful-day.png') center center no-repeat;
+            }
+
+            #cool-text-2 {
+                height: 750px;
+                width: 100%;
+                background: url('../img/i-froze.png') center center no-repeat;
+            }
+
+            #scene-6 {
+                background: url('../img/fuzzball.png') center center no-repeat;
+            }
+
+            #fuzz-text {
+                height: 1000px;
+                width: 100%;
+                top: 0%;
+                background: url('../img/in-the-corner.png') center center no-repeat;
+            }
+
+            #scene-7 {
+                background: url('../img/thinkingmelissa.png') center center no-repeat;
+            }
+
+            #scene-8 {
+                background: url('../img/mousey.png') center center no-repeat;
+            }
+
+            #alas-text-1 {
+                height: 100%;
+                width: 100%;
+                background: url('../img/alas.png') center center no-repeat;
+            }
+
+            #alas-text-2 {
+                height: 100%;
+                width: 100%;
+                background: url('../img/twas-a-mouse.png') center center no-repeat;
+            }
+
+            #alas-text-3 {
+                height: 100%;
+                width: 100%;
+                background: url('../img/and-it-was-eating.png') center center no-repeat;
+            }
+
+            #alas-kitkat-full {
+                height: 100%;
+                width: 100%;
+                top: 0%;
+                background: url('../img/kitkat.png') center center no-repeat;
+            }
+
+            #alas-kitkat-empty {
+                height: 100%;
+                width: 100%;
+                top: 0%;
+                background: url('../img/kitkat2.png') center center no-repeat;
+            }
+
+            #scene-9 {
+                background: url('../img/so-under.png') center center no-repeat;
+            }
+
+            #flail {
+                height: 100%;
+                width: 100%;
+                background: url('../img/flail.png') center center no-repeat;
+            }
+
+            #scene-10 {
+                background: url('../img/but-to-tell.png') center center no-repeat;
+            }
+
+            #truth-measure {
+                height: 100%;
+                width: 100%;
+                top: 0%;
+                background: url('../img/kitkat-wrapper-size.png') center center no-repeat;
+            }
+
+            #scene-11 {
+                background: url('../img/so-naturally.png') center center no-repeat;
+            }
+
+            #photo-model {
+                height: 100%;
+                width: 100%;
+                background: url('../img/photo-modelpose.png') center center no-repeat;
+            }
+
+            #photo-eating {
+                height: 1000px;
+                width: 100%;
+                background: url('../img/photo-eatingkitkat.png') center center no-repeat;
+            }
+
+            #photo-lying {
+                height: 100%;
+                width: 100%;
+                background: url('../img/photo-lyingdown.png') center center no-repeat;
+            }
+
+            #scene-12 {
+                background: url('../img/my-fb-status.png') center center no-repeat;
+            }
+
+            #fb-comment-1 {
+                height: 100%;
+                width: 100%;
+                background: url('../img/fb-comments-1.png') center center no-repeat;
+            }
+
+            #fb-comment-2 {
+                height: 100%;
+                width: 100%;
+                background: url('../img/fb-comments-2.png') center center no-repeat;
+            }
+
+            #fb-comment-3 {
+                height: 100%;
+                width: 100%;
+                background: url('../img/fb-comments-3.png') center center no-repeat;
+            }
+
+            #scene-13 {
+                background: url('../img/that-night.png') center center no-repeat;
+            }
+
+            #night-mouse {
+                height: 100%;
+                width: 100%;
+                background: url('../img/scurrying-mouse.png') center center no-repeat;
+            }
+
+            #scene-14 {
+                background: url('../img/leaving-behind.png') center center no-repeat;
+            }
+
+            #scene-15 {
+                background: url('../img/that-night-i-removed.png') center center no-repeat;
+            }
+
+            #snacks {
+                height: 1000px;
+                width: 100%;
+                background: url('../img/allnighter-snacks.png') center center no-repeat;
+            }
+
+            #scene-16 {
+                background: url('../img/i-dont-even-know.png') center center no-repeat;
+            }
+
+            #ninja-1 {
+                height: 1000px;
+                width: 100%;
+                background: url('../img/ninja-mouse-1.png') center center no-repeat;
+            }
+
+            #ninja-2 {
+                height: 1000px;
+                width: 100%;
+                background: url('../img/ninja-mouse-2.png') center center no-repeat;
+            }
+
+            #ninja-3 {
+                height: 1000px;
+                width: 100%;
+                background: url('../img/ninja-mouse-3.png') center center no-repeat;
+            }
+
+            #scene-17 {
+                background: url('../img/.png') center center no-repeat;
+            }
+
+            #supplies-comp {
+                height: 1000px;
+                width: 100%;
+                background: url('../img/guest-appearance-comp.png') center center no-repeat;
+            }
+
+            #supplies-mouse {
+                height: 1000px;
+                width: 100%;
+                top: 0%;
+                background: url('../img/guest-appearance-mouse.png') center center no-repeat;
+            }
+
+            #supplies-supplies {
+                height: 1000px;
+                width: 100%;
+                top: 0%;
+                background: url('../img/guest-appearance-supplies.png') center center no-repeat;
+            }
+
+            #scene-18 {
+                background: url('../img/mouse-under-desk.png') center center no-repeat;
+            }
+
+            #scene-19 {
+                background: url('../img/another-mouse.png') center center no-repeat;
+            }
+
+            #scene-20 {
+                background: url('../img/pretty-sure.png') center center no-repeat;
+            }
+
+            #army-gray {
+                height: 1000px;
+                width: 100%;
+                background: url('../img/mouse-army-gray.png') center center no-repeat;
+            }
+
+            #scene-21 {
+                background: url('../img/building-up-army.png') center center no-repeat;
+            }
+
+            #army-brown {
+                height: 1000px;
+                width: 100%;
+                background: url('../img/mouse-army-brown.png') center center no-repeat;
+            }
+
+            #scene-22 {
+                background: url('../img/at-least-cute-army.png') center center no-repeat;
+            }
+
+            #scene-23 {
+                background: url('../img/alright-well-end.png') center center no-repeat;
+            }
+
+            #end-top {
+                position: absolute;
+                left: 50%;
+                bottom: 10%;
+                margin-left: -68px;
+            }
+
+            #end-portfolio {
+                position: absolute;
+                left: 50%;
+                bottom: 10%;
+                margin-left: -102px;
+                margin-bottom: 156px;
+            }
+        </style>
     </head>
     <body>
         <div class="background"></div>
