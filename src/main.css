@@ -16,7 +16,7 @@ html, body {
 }
 
 body {
-    height: 70000px;
+    height: 77000px;
     overflow-y: auto;
 }
 
@@ -78,9 +78,6 @@ div {
     height: 100%;
     width: 100%;
     background: url('../img/this-is-the-story.png') center center no-repeat;
-}
-
-#scene-4 {
 }
 
 #convo-shriek {
@@ -287,9 +284,76 @@ div {
 }
 
 #scene-17 {
-    background: url('../img/anyways-guest-appear.png') center center no-repeat;
+    background: url('../img/.png') center center no-repeat;
+}
+
+#supplies-comp {
+    height: 1000px;
+    width: 100%;
+    background: url('../img/guest-appearance-comp.png') center center no-repeat;
+}
+
+#supplies-mouse {
+    height: 1000px;
+    width: 100%;
+    top: 0%;
+    background: url('../img/guest-appearance-mouse.png') center center no-repeat;
+}
+
+#supplies-supplies {
+    height: 1000px;
+    width: 100%;
+    top: 0%;
+    background: url('../img/guest-appearance-supplies.png') center center no-repeat;
 }
 
 #scene-18 {
-    background: url('../img/by-this-point.png') center center no-repeat;
+    background: url('../img/mouse-under-desk.png') center center no-repeat;
+}
+
+#scene-19 {
+    background: url('../img/another-mouse.png') center center no-repeat;
+}
+
+#scene-20 {
+    background: url('../img/pretty-sure.png') center center no-repeat;
+}
+
+#army-gray {
+    height: 1000px;
+    width: 100%;
+    background: url('../img/mouse-army-gray.png') center center no-repeat;
+}
+
+#scene-21 {
+    background: url('../img/building-up-army.png') center center no-repeat;
+}
+
+#army-brown {
+    height: 1000px;
+    width: 100%;
+    background: url('../img/mouse-army-brown.png') center center no-repeat;
+}
+
+#scene-22 {
+    background: url('../img/at-least-cute-army.png') center center no-repeat;
+}
+
+#scene-23 {
+    background: url('../img/alright-well-end.png') center center no-repeat;
+}
+
+#end-top {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    margin-left: -68px;
+}
+
+#end-portfolio {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    margin-left: -102px;
+    margin-bottom: 156px;
 }
