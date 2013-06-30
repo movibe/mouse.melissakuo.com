@@ -6,4 +6,5 @@ The idea, outline, and illustrations were all done in Fall 2012 as part of Melis
 
 Credits
 ================
+* [Alexander Prinzhorn](https://github.com/Prinzhorn) - For his awesome parallax library, [Skrollr](https://github.com/Prinzhorn/skrollr), which made all this possible.
 * [Melissa Kuo](http://melissakuo.com/) - Design, illustrations and colour.
